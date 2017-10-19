@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+
+    <title>Status | Kathmandu Univerisity Free Wifi</title>
+
+$(if refresh-timeout)
+<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+$(endif)
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    $(if refresh-timeout)
+    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+    $(endif)
+
+
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+
+
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+    <body>
+        <div class="layout">
+                        <header>
+                <div id="top" class="top">
+                    <div class="headerwrap">
+                        <div class="logo">
+                            <a href="/">
+                                <span style="color:green;">K</span>U
+                                <span>
+                                    <span style="color:yellow"> Wifi</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+
+                </div>
+                <div style="clear:both;"></div>
+                <div class="separator">
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                    <span class="s4"></span>
+                </div>
+                <div style="clear:both;"></div>
+
+            </header>
+
+
+
+            <div class="pagewrap">
+
+
+
+                <div class="grid group">
+
+                    <div class=" grid-1-1">
+                        <div class="module">
+
+                            <h2>Status:</h2>
+                            <hr>
+                            $(if link-orig)
+                            <p>Your requested URL is <a href=" $(link-orig) ">this</a>. </p>
+                            $(endif)
+
+                            <p>$(if error)$(error)$(endif)</p>
+
+<table border="1" class="tabula">
+$(if login-by == 'trial')
+    <br><div style="text-align: center;">Welcome trial user!</div><br>
+$(elif login-by != 'mac')
+    <br><div style="text-align: center;"><h1>Welcome $(username)!</h1></div><br>
+$(endif)
+    <tr><td align="center">This Session bytes up/down</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+$(if uptime)
+    <tr><td align="center">This Session connected time </td><td>$(uptime)</td></tr>
+$(endif)
+
+$(if session-time-left)
+    <tr><td align="center">Your Time left:</td><td>$(session-time-left)</td></tr>
+$(endif)
+
+$(if remain-bytes-out)
+<tr><td align="center">Megabytes Remaining:</td><td><script language="JavaScript">document.write(readablizeBytes($(remain-bytes-out)));</script></td></tr>
+$(endif)
+
+$(if blocked == 'yes')
+    <tr><td align="center">status:</td><td><div style="color: #FF8080">
+<a href="$(link-advert)" target="hotspot_advert">advertisement</a> required</div></td></tr>
+$(elif refresh-timeout)
+    <tr><td align="center">status refresh:</td><td>$(refresh-timeout)</td></tr>
+$(endif)
+</table>
+
+<a href="logout"><input type="submit" class="button" value="log off"></a>
+<br><br>
+<a href="logout?erase-cookie=true"><input type="submit" class="button" value="log off full"></a>
+                            <hr/>
+
+<h2>Your Informations</h2>
+<table>
+    $(if login-by)
+    <tr><td align="center">Logged in By:</td><td>$(login-by)</td></tr>
+    $(endif)
+
+    $(if mac)
+    <tr><td align="center">Mac Address : </td><td>$(mac)</td></tr>
+    $(endif)
+
+    $(if ip)
+    <tr><td align="center">Ip Address : </td><td>$(ip)</td></tr>
+    $(endif)
+</table>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </body>
+
+
+</body>
+
+</html>

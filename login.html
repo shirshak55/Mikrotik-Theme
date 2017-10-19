@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <title>Kathmandu University Free Wifi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+$(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+    <script type="text/javascript" src="/md5.js"></script>
+    <script type="text/javascript">
+    <!--
+        function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+        document.sendin.submit();
+        return false;
+        }
+    //-->
+    </script>
+$(endif)
+
+
+    <body>
+        <div class="layout">
+            <header>
+                <div id="top" class="top">
+                    <div class="headerwrap">
+                        <div class="logo">
+                            <a href="/">
+                                <span style="color:green;">K</span>U
+                                <span>
+                                    <span style="color:yellow"> Wifi</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+
+                </div>
+                <div style="clear:both;"></div>
+                <div class="separator">
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                    <span class="s4"></span>
+                </div>
+                <div style="clear:both;"></div>
+
+            </header>
+
+
+            <div class="pagewrap">
+
+
+
+                <div class="grid group">
+
+                    <div class=" grid-2">
+                        <div class="module">
+
+                            <h2>Login To Acess Internet</h2>
+                            <hr>
+
+                            <p>$(if error)$(error)$(endif)</p>
+
+                            <form name="login" class="respond userloginform" action="$(link-login-only)" method="post"
+        $(if chap-id) onSubmit="return doLogin()" $(endif)>
+
+                                <input type="hidden" name="dst" value="$(link-orig)" />
+                                <input type="hidden" name="popup" value="true" />
+
+                                <div class="formdiv">
+                                    <label for="username">Username</label>
+                                    <input name="username" type="text" value="$(username)" />
+                                </div>
+
+                                <div class="formdiv">
+                                    <label for="password">Password</label>
+                                    <input name="password" type="password"/>
+                                </div>
+
+                                <div class="buttons">
+                                    <input type="submit" class="button" value="Login"  />
+                                </div>
+
+                            </form>
+                            <hr/>
+
+                        </div>
+                    </div>
+
+                    <div class="grid-3">
+                        <div class="module">
+
+                          <h2>Our Details</h2>
+                            <ul>
+                           <li>ISMS</li>
+                                <hr/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>

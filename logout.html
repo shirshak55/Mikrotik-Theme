@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+
+    <title>Status | Kathmandu University Free Wifi</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    $(if refresh-timeout)
+    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+    $(endif)
+
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+    <body>
+        <div class="layout">
+            <header>
+                <div id="top" class="top">
+                    <div class="headerwrap">
+                        <div class="logo">
+                            <a href="/">
+                                <span style="color:green;">K</span>U
+                                <span>
+                                    <span style="color:yellow"> Wifi</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+
+                </div>
+                <div style="clear:both;"></div>
+                <div class="separator">
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                    <span class="s4"></span>
+                </div>
+                <div style="clear:both;"></div>
+
+            </header>
+
+
+
+            <div class="pagewrap">
+
+
+
+                <div class="grid group">
+
+                    <div class=" grid-1-1">
+                        <div class="module">
+
+                            <h2>Logged Out. Statistics :</h2>
+                            <hr>
+
+                            <p>$(if error)$(error)$(endif)</p>
+
+                           <script language="JavaScript">
+<!--
+    function openLogin() {
+    if (window.name != 'hotspot_logout') return true;
+    open('$(link-login)', '_blank', '');
+    window.close();
+    return false;
+    }
+//-->
+</script>
+
+
+<table width="100%" height="100%">
+<b>You have just logged out</b> <br><br>
+<table class="tabula" border="1">
+<tr><td align="right">User name</td><td>$(username)</td></tr>
+<tr><td align="right">IP address</td><td>$(ip)</td></tr>
+<tr><td align="right">Session time</td><td>$(uptime)</td></tr>
+$(if session-time-left)
+<tr><td align="right">time left</td><td>$(session-time-left)</td></tr>
+$(endif)
+<tr><td align="right">bytes up/down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+</table>
+<br>
+<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+<input type="submit" class="button" value="log in">
+</form>
+</table>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </body>
+
+
+    <script type="text/javascript">
+    <!--
+    document.login.username.focus();
+    //-->
+    </script>
+</body>
+
+</html>
