@@ -7,9 +7,15 @@ This THeme is Designed by Shirshak. No modification should be made and no conten
     font-weight:400;
     src:local('maagkramp'), local('maagkramp'), url(fonts/maagkramp.woff) format('woff')
 }
+@font-face {
+    font-family:'Varela Round';
+    font-style:normal;
+    font-weight:400;
+    src:local('Varela Round'), local('Varela Round'), url('fonts/VarelaRound-Regular.otf') format('opentype')
+}
 body {
 
-    font-family:verdana;
+    font-family:'Varela Round';
     font-size:16px;
     color:#333;
     line-height:1.4
@@ -26,7 +32,7 @@ a:active {
 .heading, h1, h2, h3, h4, h5, h6 {
     margin:0 0 10px;
     padding:0;
-    font-family:'Whitney Cond A', 'Whitney Cond B', ronnia-condensed, verdana;
+    font-family:'Whitney Cond A', 'Whitney Cond B', ronnia-condensed, 'Varela Round';
     font-weight:700;
     font-style:normal;
     line-height:1.1
@@ -92,7 +98,7 @@ hr {
         padding:0
     }
     button, html, input, select, textarea {
-        font-family:verdana,sans-serif;
+        font-family:'Varela Round',sans-serif;
     }
     images {
         border:0;
@@ -181,7 +187,7 @@ hr {
         box-shadow:1px 0 1px #20912e, 0 1px 1px #38b150, 2px 1px 1px #209132, 1px 2px 1px #47b138, 3px 2px 1px #209125, 2px 3px 1px #50b138, 4px 3px 1px #259120, 3px 4px 1px #38b142, 5px 4px 1px #379120, 4px 5px 1px #38b138, 6px 5px 1px #209129;
         color:#fff;
         white-space:nowrap;
-        font-family:verdana;
+        font-family:'Varela Round';
         padding:9px 16px;
         position:relative;
         top:-5px;
@@ -197,7 +203,7 @@ hr {
         left:3px
     }
     input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], select, textarea {
-        font-family:verdana,"Whitney SSm A", "Whitney SSm B", ff-meta-web-pro, sans-serif;
+        font-family:'Varela Round',"Whitney SSm A", "Whitney SSm B", ff-meta-web-pro, sans-serif;
         padding:6px 0 6px 6px;
         outline:0 none;
         word-break:normal;
