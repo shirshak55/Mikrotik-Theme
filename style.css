@@ -26,7 +26,8 @@ a:active {
 .heading, h1, h2, h3, h4, h5, h6 {
     margin:0 0 10px;
     padding:0;
-    font-family:'Whitney Cond A', 'Whitney Cond B', ronnia-condensed, verdana;
+    font-family:'Varela Round', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight:700;
     font-style:normal;
     line-height:1.1
@@ -36,10 +37,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 .h1, h1 {
     font-size:32px;
+    font-family:'Varela Round', sans-serif;
     margin:0
 }
 .h2, h2 {
     font-size:24px;
+    font-family: 'Open Sans', sans-serif;
     margin:0
 }
 b, strong {
