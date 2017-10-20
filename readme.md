@@ -3,6 +3,7 @@
 
 ## Installation
 * Open winbox and login to your mikrotik router.
+* Remote the screenshot folder as it is useless for mikrotik
 * Open the filesystem and upload this theme. 
 * Check your hotspot page.
 
