@@ -1,5 +1,8 @@
 # Beautiful Theme For Mikrotik Hotspot
-* Theme made by Shirshak for mikrotik router
+* Theme made by Shirshak for mikrotik router. If you like it use it. If you find any problem you can post issue on issue tab . I used it on various mikrotik routers. Please test it before deploying.
+
+# Contribution
+PR are welcome and I am happy to merge any PR.
 
 # Licence
 You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning this repo name.
