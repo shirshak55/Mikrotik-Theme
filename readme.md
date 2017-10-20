@@ -14,9 +14,9 @@ You may want to customize the text etc. You can just change theme text and it is
 PR are welcome and I am happy to merge any PR.
 
 ## Contributors
-Here are list of kind people who have contributed this project.
+Here are list of kind people who have significantly contributed this project.
 
-1. Contributor No 1 
+1. Jonas Westerholm
 
 ## Licence
 You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning this repo name.
