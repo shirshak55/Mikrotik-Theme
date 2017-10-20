@@ -1,10 +1,23 @@
 # Beautiful Theme For Mikrotik Hotspot
 * Theme made by Shirshak for mikrotik router. If you like it use it. If you find any problem you can post issue on issue tab . I used it on various mikrotik routers. Please test it before deploying.
 
-# Contribution
+## Installation
+* Open winbox and login to your mikrotik router.
+* Open the filesystem and upload this theme. 
+* Check your hotspot page.
+
+## Customization
+You may want to customize the text etc. You can just change theme text and it is simple HTML.
+
+## Contribution
 PR are welcome and I am happy to merge any PR.
 
-# Licence
+## Contributors
+Here are list of kind people who have contributed this project.
+
+1. Contributor No 1 
+
+## Licence
 You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning this repo name.
 
 My address is: `Kathmandu University Boys Hostel(KUBH) Dhulikhel, Kavrepalanchowk, Nepal`
@@ -13,14 +26,11 @@ All received postcards are published on our website and mentioned on this repo r
 
 After sending please ping me once.
 
-## Installation
-* Just download or clone this repo and add it to your mikrotik filesystem.
-
 ## Contributing
 * I don't want to lie but I will only update this project when somebody find a problem. And I am not financially stront to support these project as I don't have time. However I can give you paid support. For that lets discuss `bloggervista@gmail.com`
 
 ## Security
-If you discover any security related issue, please email bloggervista@gmail.com .
+If you discover any security related issue, please email `bloggervista@gmail.com` .
 
 ## Donation
 Considering the hours spend on developing this boilerplate and you might have used it on production I accept the donation. Doner name will be written on this repo as a mark of apperciation. I do accept cards payment, paypal but I am not writing it here. If you like to donate kindly ping me at `bloggervista@gmail.com` . 
