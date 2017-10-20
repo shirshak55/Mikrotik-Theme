@@ -27,7 +27,8 @@ All received postcards are published on our website and mentioned on this repo r
 After sending please ping me once.
 
 ## Contributing
-* I don't want to lie but I will only update this project when somebody find a problem. And I am not financially stront to support these project as I don't have time. However I can give you paid support. For that lets discuss `bloggervista@gmail.com`
+* I don't want to lie but I will only update this project when somebody find a problem. And I am not financially strong to support these project as I don't have time. However I can give you paid support. For that lets discuss `bloggervista@gmail.com`
+* This doesn't mean I don't care about it. I will keep updating if I find any problem.
 
 ## Security
 If you discover any security related issue, please email `bloggervista@gmail.com` .
