@@ -19,13 +19,7 @@ Here are list of kind people who have significantly contributed this project.
 1. Jonas Westerholm
 
 ## Licence
-You're free to use this package (it's MIT-licensed), but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning this repo name.
-
-My address is: `Kathmandu University Boys Hostel(KUBH) Dhulikhel, Kavrepalanchowk, Nepal`
-
-All received postcards are published on our website and mentioned on this repo readme file.
-
-After sending please ping me once.
+MIT
 
 ## Contributing
 * I don't want to lie but I will only update this project when somebody find a problem. And I am not financially strong to support these project as I don't have time. However I can give you paid support. For that lets discuss `bloggervista@gmail.com`
